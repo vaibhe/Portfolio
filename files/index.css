@@ -1,0 +1,467 @@
+:root {
+  --blue:rgb(2, 100, 248);
+
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  text-transform: capitalize;
+  outline: none;
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+}
+
+html::-webkit-scrollbar {
+  width: 1.2rem;
+}
+
+html::-webkit-scrollbar-track {
+  background: #222
+}
+
+html::-webkit-scrollbar-thumb {
+  background: var(--blue)
+}
+
+body {
+  background: #111;
+  overflow-x: hidden;
+  padding-left: 35rem;
+}
+
+
+section {
+  min-height: 100vh;
+  
+
+}
+
+
+header {
+  display: flex;
+  
+  position: fixed;
+  top: 0px;
+  left: 0px;
+  z-index: 1000;
+  width: 35rem;
+  height: 100%;
+  background: #1a1a1a;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: .5s;
+  border-right: 5px solid var(--blue); 
+   box-shadow: 0 30px 50px rgb(196, 214, 62); 
+}
+
+
+ header.active{
+ 
+  display: flex;
+   
+} 
+
+
+
+header .image {
+  border-radius: 50%;
+  width: 15rem;
+  height: 15rem;
+  border: .7rem solid var(--blue);
+ 
+
+}
+
+header .user .name {
+  font-size: 34px;
+
+  text-align: center;
+  color: #fff;
+}
+
+.navs ul {
+  list-style: none;
+}
+
+
+.navs ul li a {
+  display: block;
+  background: #333;
+  padding: 9px;
+  font-size: 20px;
+  width: 14rem;
+  height: 30px;
+  margin: 15px;
+  border-radius: 5rem;
+  text-align: center;
+  color: #fff;
+}
+
+.navs ul li a:hover {
+  background: var(--blue);
+}
+
+Only for responsive  
+#toggle{
+  position: fixed;
+  top: 22px;
+  right: 24px;
+  cursor: pointer;
+  z-index: 1000;
+  color: #fff;
+  font-size:  2.5rem;
+  background: url(3dos.png) no-repeat center center/cover;
+  width: 50px;
+  height: 50px;
+} 
+
+
+
+.home {
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
+  padding: 0 15px;
+
+
+}
+
+.home h3 {
+  text-align: center;
+  font-size: 5rem;
+  color: #fff;
+  font-weight: 800;
+}
+
+.home h1 {
+  text-align: center;
+  font-size: 2rem;
+  color: #fff;
+}
+
+.home p {
+  margin-top: 1.3rem;
+  
+  text-align: center;
+  font-size: 2.5rem;
+  font-weight: 400;
+  color: #fff;
+  padding: 5px;
+}
+
+.autoinput{
+  border-bottom: 3px solid var(--blue) ;
+}
+
+
+.heading {
+  text-align: center;
+  color: #fff;
+  margin: 0 6rem;
+  font-size: 4rem;
+  padding: 1 rem;
+  border-bottom: 2px solid #fff4;
+}
+
+.heading span {
+  color: var(--blue);
+}
+
+.about .row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0;
+}
+
+.about .row .info {
+  flex: 1 1 .1rem;
+  padding: 2rem 1rem;
+  padding-left: 6rem;
+
+}
+
+.about .row .info h3 {
+  color: wheat;
+  font-size: 20px;
+  font-weight: normal;
+  padding: .8rem 0;
+}
+
+.about .row .info span {
+  color: orange;
+  font-size: 25px;
+  padding: 0.5rem;
+}
+
+.about .row .counter {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: .6rem;
+  flex-wrap: wrap;
+  
+
+}
+
+.about .row .counter .box {
+
+  width: 20rem;
+  background: #222;
+  text-align: center;
+  padding: 2rem;
+  margin: 1rem;
+  opacity: 0.7;
+}
+
+.about .row .counter .box:hover{
+  opacity: 1;
+}
+
+.about .row .counter .box span {
+  font-size: 4rem;
+  color: orange;
+}
+
+.about .row .counter .box h3 {
+  font-size: 2rem;
+  color: #fff;
+}
+
+.flex-father {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem
+}
+
+.flex-father .flex-child {
+  width: 18rem;
+  height: 10rem;
+  background: #222;
+  opacity: 0.7;
+
+  padding: 2rem;
+  margin: 1rem;
+  border-left: 9px solid var(--blue);
+}
+
+.flex-father .flex-child h3 {
+  color: wheat;
+  font-size: 20px;
+}
+
+.flex-father .flex-child span {
+  color: orange;
+}
+
+.flex-father .flex-child:hover{
+  cursor: pointer;
+  opacity: 1;
+}
+
+
+.boxes {
+  width: 35rem;
+  height: fit-content;
+  background: #6e6969;
+  margin: 12rem;
+  cursor: pointer;
+  color: #fff;
+
+}
+
+#i-logo{
+  color: #000000;
+}
+
+.boxes .work {
+  margin: 2rem;
+
+
+}
+
+.boxes .work .calci {
+  margin-top: 3px;
+  font-size: 25px;
+  position: relative;
+  border-bottom: 2px dashed rgb(0, 0, 0);
+}
+
+.boxes .work .calclink {
+  padding: 2px;
+  font-size: 14px;
+  transition: .5s;
+  height: 0px;
+  overflow: hidden;
+
+}
+
+.work.active .calclink {
+  height: 37px;
+}
+
+.bothdetails {
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mydetails{
+  display: flex;
+  flex-direction: column;
+ 
+  
+}
+
+.mydetails span{
+ color:orange;
+ font-size: 25px;
+}
+
+.mydetails p{
+  padding-top:15px ;
+  color: wheat;
+  font-size: 20px;
+}
+
+
+.socials{
+
+  display: flex;
+  width: 30px;
+  width: 190px;
+  height: 100px;
+  justify-content: center;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.socials .insta ,.linkin , .github {
+  width: 35px;
+  height: 35px;
+}
+
+
+.parent{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  left: 24px;
+  width: 28rem;
+  height: 85vh;
+  
+}
+
+.yourdetals  {
+
+  position: relative;
+  margin-left: auto; 
+   margin-bottom: auto;
+  width: 25rem;
+  top: 55px;
+}
+
+.yourdetals input{
+  font-size: large;
+  background: #333;
+  margin:25px;
+ width: 380px;
+ height: 40px;
+ color: wheat;
+}
+
+.yourdetals .msg{
+  margin-top: 25px;
+  position: relative;
+  width: 380px;
+  height: 240px;
+  left: 24px;
+  background: #333;
+  color: #fff;
+}
+
+.sendbtn{
+  position: relative;
+  width: 8rem;
+  height: 2rem;
+  margin-top: 25px;
+  left: 10rem;
+  background: #333;
+  font-size:20px;
+}
+.sendbtn:hover{
+  background: var(--blue);
+  cursor: pointer;
+  color: #fff;
+} 
+
+
+
+/* @media only screen and (max-width: 600px) {
+  *{
+    margin: 0px;
+    padding: 0px;
+  }
+
+  .navs ul {
+    list-style: none;
+  }
+  
+  
+  .navs ul li a {
+    display: none;
+    background: #333;
+    padding: 9px;
+    font-size: 20px;
+    width: 6rem;
+    height: 2rem;
+    margin: 15px;
+    border-radius: 5rem;
+    text-align: center;
+    color: #fff;
+  }
+
+  .home {
+   
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 15px;
+  
+  
+  }
+  
+  .home h3 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+    font-weight: 300;
+  }
+  
+  .home h1 {
+    text-align: center;
+    font-size: 2rem;
+    color: #333;
+  }
+  
+  .home p {
+  
+    
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 400;
+    color: #fff;
+    padding: 5px;
+  }
+
+ 
+  
+  
+ 
+} */
